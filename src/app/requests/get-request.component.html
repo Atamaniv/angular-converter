@@ -1,0 +1,9 @@
+<div class="card text-center m-3">
+    <h5 class="card-header">Simple GET Request</h5>    
+    <div class="card-body">
+        Total @angular packages: {{requestResult}}
+        <ul>
+            <li *ngFor="let o of dataFromPrivatBank" value={{o}}>{{o["ccy"]}}-{{o["base_ccy"]}}   {{o["buy"]}} - {{o["sale"]}} </li>
+        </ul>
+    </div>
+</div>
